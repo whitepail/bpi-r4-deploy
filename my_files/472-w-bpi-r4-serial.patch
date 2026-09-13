@@ -1,0 +1,36 @@
+--- /dev/null	2026-09-13 10:38:24.571559320 +0000
++++ arch/arm64/boot/dts/mediatek/mt7988a-bananapi-bpi-r4-serial.dtso	2026-09-13 19:35:26.947629555 +0000
+@@ -0,0 +1,33 @@
++/dts-v1/;
++/plugin/;
++
++/ {
++    compatible = "mediatek,mt7988a-rfb\0mediatek,mt7988a"; 
++
++    /* Fragment 0: Map the serial peripheral to the system aliases node */
++    fragment@0 {
++        target-path = "/aliases";
++        __overlay__ {
++               serial1 = "/soc/serial@11000100";
++               serial2 = "/soc/serial@11000200";
++        };
++    };
++
++    fragment@1 {
++        target = <&serial1>;
++        __overlay__ {
++            pinctrl-names = "default";
++            pinctrl-0 = <&uart1_2_pins>;
++            status = "okay";
++        };
++    };
++
++    fragment@2 {
++        target = <&serial2>;
++        __overlay__ {
++            pinctrl-names = "default";
++            pinctrl-0 = <&uart2_3_pins>;
++            status = "okay";
++        };
++    };
++};
