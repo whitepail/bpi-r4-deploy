@@ -1,0 +1,11 @@
+--- a/arch/arm64/boot/dts/mediatek/mt7988a-bananapi-bpi-r4.dtsi	2026-09-14 08:45:28.791357759 +0000
++++ b/arch/arm64/boot/dts/mediatek/mt7988a-bananapi-bpi-r4.dtsi	2026-09-14 08:45:37.611040787 +0000
+@@ -592,7 +592,7 @@
+ 
+ 		partition@200000 {
+ 			label = "ubi";
+-			reg = <0x200000 0x7e00000>;
++			reg = <0x200000 0xfe00000>;
+ 			compatible = "linux,ubi";
+ 
+ 			volumes {
