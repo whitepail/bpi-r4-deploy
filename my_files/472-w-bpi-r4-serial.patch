@@ -1,5 +1,5 @@
 --- /dev/null	2026-09-13 10:38:24.571559320 +0000
-+++ arch/arm64/boot/dts/mediatek/mt7988a-bananapi-bpi-r4-serial.dtso	2026-09-13 19:35:26.947629555 +0000
++++ b/arch/arm64/boot/dts/mediatek/mt7988a-bananapi-bpi-r4-serial.dtso	2026-09-13 19:35:26.947629555 +0000
 @@ -0,0 +1,33 @@
 +/dts-v1/;
 +/plugin/;
