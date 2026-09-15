@@ -25,7 +25,7 @@
 +    };
 +
 +    fragment@2 {
-+        target = <&gbe0-led1-pins>;
++        target = <&gbe0_led1_pins>;
 +        __overlay__ {
 +            mux {
 +                function = "uart";
@@ -34,7 +34,7 @@
 +    };
 +
 +    fragment@3 {
-+        target = <&gbe1-led1-pins>;
++        target = <&gbe1_led1_pins>;
 +        __overlay__ {
 +            mux {
 +                function = "uart";
